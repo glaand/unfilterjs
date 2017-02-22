@@ -1,2 +1,2 @@
 # unfilterjs
-A Javascript library that allows you to unfilter your filtered stuff
+A small Javascript library that allows you to restore your filtered Array
