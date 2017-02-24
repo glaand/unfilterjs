@@ -1,0 +1,40 @@
+{
+  "name": "unfilterjs",
+  "version": "1.0.0",
+  "description": "A Javascript library that allows you to unfilter your filtered stuff",
+  "main": "unfilter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1 && mocha $npm_package_options_mocha",
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist && cd dist/ && uglifyjs unfilter.js -o unfilter.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaand/unfilterjs.git"
+  },
+  "keywords": [
+    "unfilter",
+    "unfilterjs",
+    "filter",
+    "array-filter",
+    "restore-original",
+    "restore",
+    "original"
+  ],
+  "options": {
+    "mocha": "--require test/mocha-runner --require test/DOM test/**/*.spec.js"
+  },
+  "author": "André Glatzl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glaand/unfilterjs/issues"
+  },
+  "homepage": "https://github.com/glaand/unfilterjs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "chai": "3.5.0",
+    "eslint": "3.16.1",
+    "eslint-config-axial": "1.1.1",
+    "mocha": "3.2.0"
+  }
+}
